@@ -1,0 +1,11 @@
+  // Question #03:
+  // ===============
+
+  stdout.write("Enter The Number To Find The Sum  : ");
+  int num1 = int.parse(stdin.readLineSync()!);
+  int sum = 1;
+  for (var i = 0; i <= num1; i++) {
+    sum += 4;
+  }
+  stdout.write('SUM : $sum');
+

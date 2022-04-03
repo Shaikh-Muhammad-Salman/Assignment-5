@@ -1,0 +1,11 @@
+  // Question #06:
+  // ===============
+
+  stdout.write("Enter Any Charcter : ");
+  var char = stdin.readLineSync()!;
+  if (char.runtimeType == String) {
+    print("Enter Charcter Is Alphabet");
+  } else {
+    print("Enter Charcter Is Number");
+  }
+}

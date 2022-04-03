@@ -1,0 +1,17 @@
+  // Question #05:
+  // ===============
+
+  List<int> numbers = [7, 9, 5, 11, 7, 4, 12, 6, 2, 11];
+  int x = 2;
+  int y = 12;
+  int min_dis = 999;
+  for (var i = 0; i < numbers.length; i++) {
+    for (var j = i + 1; j < numbers.length; j++) {
+      if ((x == numbers[i] && y == numbers[j]) ||
+          (y == numbers[i] && x == numbers[j]) && min_dis > (i - j).abs()) {
+        min_dis = (i - j).abs();
+      }
+    }
+  }
+  print("Minimum Distance Is : $min_dis");
+

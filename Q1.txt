@@ -1,0 +1,20 @@
+import 'dart:io';
+void main(List<String> args) {
+  // ===============
+  // Question #01:
+  // ===============
+
+  int factorial = 1;
+  stdout.write("Enter The Number");
+  int num = int.parse(stdin.readLineSync()!);
+  print("Factorial Of The Given Number $num Is");
+  if (num < 0) {
+    print("Cant Calcutate The Factorial Of The Number $num");
+  } else {
+    for (var i = 1; i <= num; i++) {
+      stdout.write("$i ");
+      factorial *= i;
+    }
+    stdout.write(": $factorial");
+  }
+
